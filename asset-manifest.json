@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/helix-css-animation/static/css/main.c60bb868.css",
+    "main.js": "/helix-css-animation/static/js/main.5ae5ae35.js",
+    "static/js/787.742f4299.chunk.js": "/helix-css-animation/static/js/787.742f4299.chunk.js",
+    "index.html": "/helix-css-animation/index.html",
+    "main.c60bb868.css.map": "/helix-css-animation/static/css/main.c60bb868.css.map",
+    "main.5ae5ae35.js.map": "/helix-css-animation/static/js/main.5ae5ae35.js.map",
+    "787.742f4299.chunk.js.map": "/helix-css-animation/static/js/787.742f4299.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c60bb868.css",
+    "static/js/main.5ae5ae35.js"
+  ]
+}
