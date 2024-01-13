@@ -1,24 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const theText = 'Lorem ipsum dolor sit amet.';
+  const textArray = theText
+    .replaceAll(' ', '\xa0')
+    .split('');
+  const animationDuration = 10;
+  const cycles = 2;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body>
+      <div className='spiralWrapper'>
+        {textArray.map((char, i) => 
+          <span className='char' key={i} style={{
+            animationDelay: `${-animationDuration/textArray.length * cycles * i}s`,
+            animationDuration: `${animationDuration}s`
+          }}>{char}</span>
+        )}
+      </div>
+      <div className='spiralWrapper'>
+        {textArray.map((char, i) => 
+          <span className='char' key={i} style={{
+            animationDelay: `${-animationDuration/textArray.length * cycles * i - animationDuration/2}s`,
+            animationDuration: `${animationDuration}s`
+          }}>{char}</span>
+        )}
+      </div>
+    </body>
   );
 }
 
