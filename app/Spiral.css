@@ -1,0 +1,42 @@
+.spiralWrapper {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 50vh;
+  font-family: monospace;
+  
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.char {
+  animation: Spiral-spin infinite ease-in;
+  position: relative;
+}
+
+@keyframes Spiral-spin {
+  0% {
+    top: 0%;
+    animation-timing-function: ease-out;
+    transform: scale(100%);
+  }
+  25% {
+    top: 50%;
+    transform: scale(50%);
+  }
+  50% {
+    top: 0%;
+    animation-timing-function: ease-out;
+    transform: scale(10%);
+  }
+  75% {
+    top: -50%;
+    transform: scale(50%);
+  }
+  100% {
+    top: 0%;
+    transform: scale(100%);
+  }
+}
